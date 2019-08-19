@@ -1,5 +1,14 @@
 'use strict';
 
 function collectSameElements(collectionA, collectionB) {
-  return '实现练习要求，并改写该行代码。';
+
+var arr = [];
+
+collectionA.filter(function (n) {
+if (collectionB[0].indexOf(n) != -1) {
+arr.push(n);
+}
+});
+console.log(arr);
+return arr;
 }
